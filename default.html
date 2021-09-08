@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Jquery Table Check All Plugin - codeanddeploy.com</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="dist/TableCheckAll.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $( '#users-table' ).TableCheckAll();
+            });
+        </script>
+    </head>
+
+    <body>
+        <div class="container mt-5">
+            <table class="table table-striped" id="users-table">
+              <thead>
+                <tr>
+                  <th scope="col"><input type="checkbox" class="check-all"></th>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">Website</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><input type="checkbox" class="check"></th>
+                  <td>Ronard</td>
+                  <td>Cauba</td>
+                  <td>https://codeanddeploy.com</td>
+                </tr>
+                <tr>
+                  <th scope="row"><input type="checkbox" class="check"></th>
+                  <td>Juan</td>
+                  <td>Dela Cruz</td>
+                  <td>https://google.com</td>
+                </tr>
+                <tr>
+                  <th scope="row"><input type="checkbox" class="check"></th>
+                  <td>John</td>
+                  <td>Doe</td>
+                  <td>https://google.com</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+    </body>
+</html>
